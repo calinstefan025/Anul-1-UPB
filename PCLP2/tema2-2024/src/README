@@ -1,0 +1,72 @@
+============================================================================
+
+TEMA 2 - AVRAMONIU CALIN-STEFAN - 312CC
+
+============================================================================
+
+Punctaj: 58 / 100
+Taskuri rezolvate: 1 , 3a , 4
+
+============================================================================
+
+Task 1:
+
+    Prima data vom imparti registrul eax care contine id-ul si permisiunile,
+    astfel incat vom obtine in edx id-ul furnicii, iar in esi salile cerute.
+    Aceasta impartire se face prin shiftari la stanga si la dreapta. Apoi,
+    in registrul edi vom salva permisiunile aflate in vectorul de permisiuni
+    la pozitia ant_permisions[id]. Cum vectorul este de dworduri, ne vom de-
+    plasa prin acesta cu edx * 4 pentru a ajunge la elementul dorit. Apoi,
+    pentru a nu strica registrul cu sali cerute, vom face o copie si vom
+    vedea care dintre salile cerute sunt si sali permise pentru furnica
+    (Adica vom vedea care biti de 1 din salile ceute apar si in salile
+    permise). Vom compara apoi rezultatul cu salile cerute, iar daca toti
+    bitii coincid, inseamna ca toate salile cerute sunt si permise. In acest
+    caz vom pune in res 1 sau daca nu este cazul vom pune in res valoarea 0.
+
+Task 3 (criptare):
+
+    In rezolvarea acestui task am urmat pasii dati in README-ul taskului,
+    astfel vom salva in ecx numarul de runde de criptare si vom folosi re-
+    gistrul in loopul exterior asociat rundelor (ecx va scadea pana la 0
+    deoarece folosim intructiunea loop), apoi vom initializa la fiecare
+    runda ebx cu 0 (pozitia in text) si vom incepe loopul efectiv de crip-
+    tare. In acest loop vom salva in al byte-ul de pe pozitia ebx din text
+    si in dl byte-ul de pe pozitia ebx din cheie. Variabila t din cerinta
+    este echivalata de al, unde vom aduna dl conform pasului 1 din algoritm.
+    Apoi, vom atribui lui al valoarea lui sbox[al] conform pasului 2.
+    Ulterior vom compara ebx cu 7 ca sa vedem daca suntem pe ultimul byte si
+    daca acesta este cazul vom da jmp catre o sectiune diferita unde tratam
+    acest caz. Apoi vom aduna la t (al) byte-ul de pe pozitia urmatoare
+    (ebx+1). Urmeaza sa folosim instructiunea rol pentru a roti cu 1 pozi-
+    tie, iar apoi byte-ul i+1 (ebx+1) va fi actualizat in functie de pozitia
+    sa. Daca suntem pe un byte din interior vom pune valoarea t (al), iar
+    daca suntem pe ultimul byte vom adauga pe pozitia 0 valoarea lui al si
+    vom iesi din loopul de criptare cu instructiunea 'loop'. La finalul loo-
+    pului exterior de runde va ramane textul initial criptat conform algo-
+    ritmului din README.
+
+Task 4:
+
+    La taskul 4 am urmarit implementarea unui algoritm de parcurgere a unui
+    labirint. Acesta este asemanator cu algoritmul fill, insa nu este recur-
+    siv. Vom avea un while din care iesim doar atunci cand dam de ultima
+    linie sau ultima coloana, iar in interior vom avea cele 2 comparatii
+    intre i si j cu m si n si un jmp conditionat catre sectiunea de iesire.
+    Apoi vom pune '1' in labirint[i][j] pentru a evita sa ne intoarcem si
+    sa vizitam aceeasi casuta de mai multe ori. Ulterior vom verifica cele
+    4 directii si ne vom deplasa pe casuta vecina. Oridinea in care veri-
+    ficam vecinii este foarte importanta, deoarece ni se spune in cerinta
+    ca mereu vom pleca de la pozitia (0,0) si mereu vom avea un drum garan-
+    tat pana la ultima colona sau ultima linie.Astfel, vom putea eficientiza
+    algoritmul si vom scapa de 2 comparari pentru i == 0 si j == 0 in cazul
+    veriicarii vecinilor de sus si din stanga. Oridinea in care parcurgem
+    este DREAPTA - JOS - STANGA - SUS. Astfel ne asiguram ca vom executa
+    mereu mutarea corecta pentru i = 0 si j = 0. In cele 4 verificari
+    vom accesa adresa liniei mergand cu esi + eax * 4, iar apoi vom aduna
+    ebx pentru a ajunge la elementul labirint[i][j]. In functie de cazul
+    verificat se va scadea sau aduna 1 la eax (i) sau ebx (j). Apoi se
+    face compararea elementului accesat cu '0' si dac vecinul poate fi vi-
+    zitat vom face un jmp catre o sectiune unde marim corespunztor i sau j,
+    iar apoi revenim in while. La final punem in out_line si out_col va-
+    lorile variabilelor globale i si j.
