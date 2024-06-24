@@ -1,0 +1,58 @@
+============================================================================
+
+TEMA 3 - AVRAMONIU CALIN-STEFAN - 312CC
+
+============================================================================
+
+Punctaj: 100 / 130
+Taskuri rezolvate: 1, 2, 3
+
+============================================================================
+
+Task 1 - Parantezinator:
+
+    Pentru a verifica daca parantezarea este corecta vom avea un while prin
+    care parcurgem sirul dat ca parametru. Apoi daca caracterul este 0 vom
+    iesi din while, iar daca acesta este o paranteza de deschidere, o vom
+    adauga pe stiva si trecem la urmatorul caracter. Daca intalnim o paran-
+    teza de inchidere vom verifica felul acesteia si vom intra pe unul din
+    cele 3 cazuri. De exemplu, daca avem caracterul ], iar in varful stivei
+    se afla caracterul [, atunci vom scoate [ din varful stivei si vom
+    merge mai departe. Insa daca paranteza de inchidere nu este de acelasi
+    fel cu cea de deschidere din varful stivei, vom returna 1 pentru paran-
+    tezare incorecta. La finalul loopului daca nu am intrat pe cazul de
+    mismatch si stiva este goala inseamna ca parantezarea e buna si returnam
+    0.
+
+Task 2 - Divide et Impera:
+
+    -> subtask1 - qsort:
+
+    Functia de qsort urmeaza algoritmul implementat in c pe website-ul
+    geekforgeeks.com. Initial vom verifica daca start > end si vom iesi din
+    functie in acest caz, iar daca start < end vom lua ca pivot ultimul ele-
+    ment din vectorul dat. Apoi vom face partitiile, insa le vom face in
+    aceeasi functie si nu vom crea o alta functie separata cu scopul acesta.
+    In final vom apela recursiv functia quick_sort pentru cele doua partitii,
+    unde pivotul va deveni atat pozitia de start cat si pozitia de end.
+
+    -> subtask2 - bsearch
+
+    Functia de binary search va construi mai intai mijlocul, folosindu-se
+    de parametrii start si end primiti la apelare, iar apoi va verifica daca
+    elementul de pe buff[mij] este cel cautat. Daca este cel cautat vom
+    merge la iesire si vom returna pozitia, adica mijlocul curent. In caz
+    ca nu este valoarea cautata vom apela recursiv bsearch in una din cele
+    doua directii posibile, start devenind mij+1 daca elementul cautat este
+    mai mare sau end devenind mij-1 daca elementul cautat este mai mic.
+
+Task 3 - DFS:
+
+    Functia dfs urmeaza algoritmul dat in README-ul taskului. Astfel, vom
+    atribui registre celor doi parametrii corespunzatori nodului si adresei
+    functiei de expand, iar apoi vom printa nodul curent apeland printf.
+    De asemenea, vom pune 1 si in vectorul visited pe pozitia nodului curent.
+    In continuare vom apela functia expand stocata in ebx si vom retine nr
+    de vecini si vectorul acestora. Vom parcurge vectorul de vecini, iar daca
+    pe pozitia lor in visited este 0 vom apela recursiv dfs pentru nodul
+    curent.
