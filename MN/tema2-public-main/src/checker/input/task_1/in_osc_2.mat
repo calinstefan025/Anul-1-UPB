@@ -1,0 +1,36 @@
+# Created by Octave 7.3.0, Sun May 05 02:26:45 2024 GMT <unknown@GRIZZLLY-LAPTOP>
+# name: freq
+# type: scalar
+1800
+
+
+# name: fs
+# type: scalar
+44100
+
+
+# name: duration
+# type: scalar
+0.10000000000000001
+
+
+# name: attack
+# type: scalar
+0.029999999999999999
+
+
+# name: decay
+# type: scalar
+0.070000000000000007
+
+
+# name: sustain
+# type: scalar
+0
+
+
+# name: release
+# type: scalar
+0
+
+

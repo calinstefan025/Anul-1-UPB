@@ -1,0 +1,27 @@
+3
+1
+Carte1
+Autor1
+2001
+Aceasta este cartea1
+2
+Carte2
+Autor2
+2002
+Aceasta este cartea2
+3
+Carte3
+Autor3
+2003
+Aceasta este cartea3
+5
+SEARCH 2002
+ENCODE 2
+REPLACE este are
+ADD_BOOK
+4
+Carte4
+Autor2
+2004
+Aceasta este cartea4
+SEARCH Autor2

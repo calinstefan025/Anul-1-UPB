@@ -1,0 +1,268 @@
+{
+    "test-groups": [
+        {
+            "name": "Task 1. Numerical Music (MN vatz prins?)",
+            "folder": "task_1",
+            "expected-file": "./numerical_music/",
+            "tests": [
+                {
+                    "name": "stereo_to_mono_1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "stereo_to_mono_2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "stereo_to_mono_3",
+                    "test-score": 2,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "spec_1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "spec_2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "spec_3",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "spec_4",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "spec_5",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "osc_1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "osc_2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "osc_3",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "create_sound_1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "create_sound_2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "lowpass_1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "lowpass_2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "lowpass_3",
+                    "test-score": 3,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "reverb_1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "reverb_2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "reverb_3",
+                    "test-score": 3,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "complex_1",
+                    "test-score": 3,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "complex_2",
+                    "test-score": 3,
+                    "test-type": "exact"
+                }
+            ]
+        },
+        {
+            "name": "Task 2. Robotzii",
+            "folder": "task_2",
+            "expected-file": "./robotzii/",
+            "tests": [
+                {
+                    "name": "parse-data-1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "parse-data-2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "parse-data-3",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "parse-data-4",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "spline-c2-1",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-2
+                },
+                {
+                    "name": "spline-c2-2",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-2
+                },
+                {
+                    "name": "spline-c2-3",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-2
+                },
+                {
+                    "name": "p_spline-1",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-2
+                },
+                {
+                    "name": "p_spline-2",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-2
+                },
+                {
+                    "name": "p_spline-3",
+                    "test-score": 3,
+                    "test-type": "approx",
+                    "max-error": 1e-2
+                },
+                {
+                    "name": "vandermonde-1",
+                    "test-score": 3,
+                    "test-type": "approx",
+                    "max-error": 1e-2
+                },
+                {
+                    "name": "vandermonde-2",
+                    "test-score": 3,
+                    "test-type": "approx",
+                    "max-error": 1e-2
+                },
+                {
+                    "name": "p_vandermonde-1",
+                    "test-score": 3,
+                    "test-type": "approx",
+                    "max-error": 1e-2
+                },
+                {
+                    "name": "p_vandermonde-2",
+                    "test-score": 4,
+                    "test-type": "approx",
+                    "max-error": 1e-2
+                }
+            ]
+        },
+        {
+            "name": "Task 3. Recommendations",
+            "folder": "task_3",
+            "expected-file": "./recommendations/",
+            "tests": [
+                {
+                    "name": "read_mat_1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "read_mat_2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "preprocess_1",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "preprocess_2",
+                    "test-score": 1,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "cosine_similarity_1",
+                    "test-score": 1,
+                    "test-type": "approx",
+                    "max-error": 1e-2
+                },
+                {
+                    "name": "cosine_similarity_2",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-2
+                },
+                {
+                    "name": "cosine_similarity_3",
+                    "test-score": 2,
+                    "test-type": "approx",
+                    "max-error": 1e-2
+                },
+                {
+                    "name": "recommendations_1",
+                    "test-score": 5,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "recommendations_2",
+                    "test-score": 5,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "recommendations_3",
+                    "test-score": 5,
+                    "test-type": "exact"
+                },
+                {
+                    "name": "recommendations_4",
+                    "test-score": 6,
+                    "test-type": "exact"
+                }
+            ]
+        }
+    ]
+}

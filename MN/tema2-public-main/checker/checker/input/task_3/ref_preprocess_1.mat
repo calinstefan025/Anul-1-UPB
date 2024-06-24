@@ -1,0 +1,11 @@
+# Created by Octave 8.4.0, Fri May 03 03:01:54 2024 GMT <unknown@DESKTOP-VCBVPPC>
+# name: reduced_mat
+# type: matrix
+# rows: 4
+# columns: 5
+ 0 2 0 8 0
+ 0 9 0 0 4
+ 1 2 1 5 0
+ 4 0 9 0 0
+
+

@@ -1,0 +1,379 @@
+44
+78934
+Circle of Fire
+Diana Gabaldon
+1991
+A time travel and adventure in the 18th century
+23847
+Nineteen Eighty-Four
+George Orwell
+1949
+A dystopia exploring totalitarian control of the state
+59482
+The Age of Innocence
+Edith Wharton
+1920
+A novel about social conventions and restrictions in New York society in the 19th century
+10293
+Tales of the Steppes
+Anton Pavlovich
+1886
+Collection of realistic stories about Russian rural life
+30485
+Harry Potter
+J.K. Rowling
+1997
+A magical adventure of a young wizard
+17362
+War and Peace
+Leo Tolstoy
+1869
+Historical epic about life in Russia during the Napoleonic Wars
+45891
+The Island
+H.G. Wells
+1896
+A story exploring the limits of science and ethics
+65274
+Pride and Prejudice
+Jane Austen
+1813
+A classic examining social relationships and love in early 19th-century English society
+89023
+The Woman in White
+Wilkie Collins
+1859
+A mystery and intrigue novel about identity and appearances
+72635
+Anna Karenina
+Leo Tolstoy
+1877
+A tragic love story set in Tsarist Russia
+82914
+Moby Dick
+Herman Melville
+1851
+An epic adventure about obsession and pursuit of a giant white whale
+39184
+Frankenstein
+Mary Shelley
+1818
+A gothic literature classic about creation and monstrosity
+64827
+Norwegian Wood
+Haruki Murakami
+1987
+A tale of love and loss in 1960s Japan
+29475
+The Children Crusade
+Marcel Schwob
+1896
+A medieval story about children going on a crusade
+15749
+Jane Eyre
+Charlotte Bronte
+1847
+A story of love and independence about a governess
+50237
+The Kite Runner
+Khaled Hosseini
+2003
+A story about friendship and betrayal in Afghanistan
+36942
+The Double
+Fyodor Dostoevsky
+1846
+A novel about identity and the internal struggle of a bureaucrat
+74928
+A Christmas Carol
+Charles Dickens
+1843
+A Christmas story about generosity and personal regeneration
+92563
+Mrs. Dalloway
+Virginia Woolf
+1925
+A day in the life of a woman from London's high society
+84726
+War of the Worlds
+H.G. Wells
+1898
+An extraterrestrial invasion threatening to destroy humanity
+23894
+Animal Farm
+George Orwell
+1945
+A political allegory about revolution and corruption
+34920
+Too Loud a Solitude
+Bohumil Hrabal
+1976
+A story about passion for books and human isolation
+29483
+Lolita
+Vladimir Nabokov
+1955
+A controversial story about obsession and forbidden love
+57483
+The Seagull
+Anton Pavlovich
+1896
+A family drama and unfulfilled dreams
+72536
+One Flew Over
+Ken Kesey
+1962
+An insight into mental health and freedom
+82573
+Crime and Punishment
+Fyodor Dostoevsky
+1866
+A student commits a crime and suffers psychological consequences
+37284
+The Name of the Rose
+Umberto Eco
+1980
+An investigation in a medieval monastery about crimes
+93485
+Dangerous Illusions
+Octavian Paler
+1976
+A novel about the struggle for freedom in an oppressive world
+46937
+Seduction Mission
+Alan Alda
+2005
+A book about communication and interpersonal relationships
+38492
+The Handmaid Tale
+Margaret Atwood
+1985
+A dystopian novel exploring a totalitarian society
+63928
+The Catcher in Rye
+J.D. Salinger
+1951
+A narrative following a teenager's journey through adolescence
+72639
+Slaughterhouse-Five
+Kurt Vonnegut
+1969
+A blend of science fiction and war commentary
+48295
+One Hundred Years
+Gabriel Garcia
+1967
+A multi-generational story of the Buendía family
+82374
+Brave New World
+Aldous Huxley
+1932
+A dystopian society based on technological and social control
+92736
+The Lord of Flies
+William Golding
+1954
+A story depicting the descent into savagery by a group of boys
+29479
+Les Misérables
+Victor Hugo
+1862
+A tale of love, injustice, and redemption set in post-revolutionary France
+86421
+The Grapes of Wrath
+John Steinbeck
+1939
+A narrative following a family's struggles during the Great Depression
+52147
+Brothers Karamazov
+Fyodor Dostoevsky
+1880
+A philosophical novel exploring morality and faith
+74362
+East of Eden
+John Steinbeck
+1952
+A multi-generational story of two families in California
+92637
+The Martian
+Andy Weir
+2011
+A science fiction novel about an astronaut stranded on Mars
+28491
+The Alchemist
+Paulo Coelho
+1988
+A story of a young Andalusian shepherd on a journey
+37642
+Beloved
+Toni Morrison
+1987
+A story about the effects of slavery on Sethe
+59372
+The Road
+Cormac McCarthy
+2006
+A post-apocalyptic journey of a father and son
+34812
+A Tale of Two Cities
+Charles Dickens
+1859
+Set in London and Paris before and during the French Revolution
+87
+REPLACE society and
+ADD_BOOK
+82910
+The Shining
+Stephen King
+1977
+A psychological horror
+ENCODE 34920
+SEARCH The Age of Innocence
+REPLACE A A
+REPLACE and relationships
+ADD_BOOK
+74922
+Brave New World 2
+Aldous Huxley
+1942
+A dystopian vision of the future
+REPLACE during creation
+ADD_BOOK
+57294
+Dracula
+Bram Stoker
+1897
+A classic Gothic horror
+ENCODE 46937
+ADD_BOOK
+65273
+The Catcher in Rye 2
+J.D. Salinger
+1962
+A coming-of-age novel
+SEARCH 1969
+SEARCH 1920
+SEARCH 1800
+ADD_BOOK
+92562
+The Picture of Gray
+Oscar Wilde
+1890
+A tale of vanity and the consequences of one's actions
+ENCODE 15749
+REPLACE and a
+SEARCH Circle of Fire
+SEARCH The Children Crusade
+REPLACE a independence
+ADD_BOOK
+59273
+The Old Man
+Ernest Hemingway
+1952
+A story of an aging fisherman
+ADD_BOOK
+93847
+Sapiens: History
+Yuval Noah Harari
+2014
+A book about the history of humans
+SEARCH The Walking Dead
+ENCODE 64827
+REPLACE in rural
+REPLACE a the
+REPLACE about drama
+ENCODE 92563
+ADD_BOOK
+57291
+The Hobbit
+J.R.R. Tolkien
+1937
+An adventure following Bilbo Baggins
+ADD_BOOK
+28493
+Wuthering Heights
+Emily Bronte
+1847
+A tragic love story
+REPLACE 1960s the
+SEARCH 1880
+SEARCH 1902
+ADD_BOOK
+57381
+The Chronicles
+C.S. Lewis
+1950
+A fantasy adventure
+ENCODE 29483
+ENCODE 17362
+ADD_BOOK
+57382
+The Hitchhike Guide
+Douglas Adams
+1979
+A comedic science fiction series
+ADD_BOOK
+92614
+Kill a Mockingbird
+Harper Lee
+1960
+A story about racial injustice and moral growth
+ADD_BOOK
+29489
+Road Less Traveled
+M. Scott Peck
+1978
+A guide to personal development
+REPLACE during world
+REPLACE in revolution
+ADD_BOOK
+38475
+The Great Gatsby
+F. Scott Fitzgerald
+1925
+A portrayal of the American Dream and its corruption
+ENCODE 57291
+REPLACE future novel
+SEARCH War and Peace
+ENCODE 48295
+ENCODE 48295
+REPLACE comedic society
+ENCODE 82374
+ENCODE 52147
+ENCODE 82910
+ENCODE 52147
+SEARCH 1977
+ENCODE 45891
+ENCODE 48295
+REPLACE children before
+SEARCH 1985
+ENCODE 39184
+SEARCH The Picture of Dorian Gray
+SEARCH 1818
+REPLACE unfulfilled psychological
+ENCODE 57381
+ENCODE 50237
+SEARCH The Name of the Rose
+SEARCH Brave New World 2
+ENCODE 57483
+ENCODE 28493
+ENCODE 34920
+ENCODE 92614
+ENCODE 46937
+SEARCH The Catcher in the Rye
+ENCODE 57483
+ENCODE 72635
+ENCODE 65273
+ENCODE 92562
+ENCODE 72635
+REPLACE world controversial
+SEARCH 1962
+ENCODE 92637
+SEARCH 1600
+ENCODE 59482
+SEARCH Art
+ENCODE 48295
+SEARCH Moby Dick
+REPLACE and classic
+SEARCH 1991
+ENCODE 29479

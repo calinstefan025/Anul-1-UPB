@@ -1,0 +1,79 @@
+================================= JOCUL 2048 =================================
+
+TIMP REALIZARE: 18 ore
+
+==============================================================================
+
+STRUCTURA PROGRAM:
+
+    Programul este modularizat in mai multe fisiere:
+
+    -> 2048.c (contine functia main a programului si loopul principal de joc)
+    -> game.c / game.h (contin toate functiile de afisare , verificare etc.)
+    -> movement.c / movement.h (contin toate functiile de mutare ale jocului)
+    -> ai.c / ai.h (contin functiile responsabile pentru decizia automata)
+
+    (Pentru detalii despre fiecare functie verificati comentariile din fisiere)
+
+==============================================================================
+
+TOATE CELE 5 CERINTE AU FOST REZOLVATE
+
+==============================================================================
+
+DESCRIERE GENERALA:
+
+    -> Se declara variabilele si se aloca dinamic matricea principala si ma-
+    tricea care tine minte ultima mutare. Apoi, se initializaza ecranele jocu-
+    lui la diferite coordonate folosindu-se functiile de afisare din "game.c".
+    In urma initializarilor se vor afisa meniul navigabil cu sageti, precum
+    si tabla de joc goala si panoul de control cu data si scorul. Dupa intrarea
+    in joc se va afisa si legenda cu instructiuni pentru jucator.
+
+    -> Urmeaza loopul principal al jocului care se incheie la selectarea optiu-
+    nii "QUIT". La selectarea optiunii "NEW GAME" se va deschide un nou loop
+    infinit responsabil pentru jocul prorpiu-zis 2048, iar la selectarea optiu-
+    nii "RESUME" ne vom intoarce in cod cu ajutorul 'goto' in loopul deschis la
+    apasarea butonului de "NEW GAME" (astfel nu se pierde progresul). Se iese 
+    din cel de-al doilea loop infinit cu tasta 'q' si ne re-ntoarcem la meniu.
+
+    -> In loopul de joc unde se citesc mutarile cu "wasd" se initializeaza ma-
+    tricea initiala la apasarea "NEW GAME", iar apoi se va retine matricea 
+    curenta in "last_move" si vom executa mutarea folosind functiile din fisie-
+    rul "movement.c". De asemenea, se updateaza in timp real scorul si statis-
+    ticile jucatorului. Dupa executarea mutarii se genereaza urmatoarea valoare
+    random.
+
+    -> Daca jucatorul nu apasa nicio tasta timp de 5 secunde jocul va lua o de-
+    cizie automata folosind functiile in fisierul "ai.c". Se va produce mutarea
+    care elibereaza cat mai multe casute atat timp cat mutarea este valida. In
+    cazul in care nicio mutare nu este valida jocul se termina si este pierdut.
+
+    -> In cazul in care dupa executarea mutarii este gasita o valoare de 2048
+    in matrice se va afisa mesajul "WIN" si se va termina jocul. De asemenea,
+    in cazul in care nu mai exista mutari valide se va termina jocul si se va
+    afisa mesajul "LOSE".
+
+==============================================================================
+
+BONUS:
+
+    1) Implementarea culorilor pentru a facilita unirea casutelor
+    2) Tablou de statistici care monitorizeaza cate mutari de fiecare fel au 
+    fost realizate.
+    3) Functionalitate de UNDO a unei mutari.
+
+IMPLEMENTARE BONUS:
+
+    1) S-a folosit functia start_color() din libraria ncurses si s-a definit o
+    pereche de culoare pentru fiecare valoare posibila. Culoarea a fost atribu-
+    ita cu functiile "wattron" si "watroff".
+
+    2) Dupa executarea fiecarei mutari, daca aceasta a fost valida, se a mari
+    counterul respeciv si se va reseta panoul de statistici in timp real.
+
+    3) Se retine matricea precedenta la fiecare mutare, iar la apasarea tastei
+    'u' se va reseta scorul la cel precedent, precum si matricea. Apoi se va 
+    astepta urmatoarea mutare de la jucator sau de la decizia automata.
+
+==============================================================================

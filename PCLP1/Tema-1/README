@@ -1,0 +1,89 @@
+TEMA 1 - PCLP 
+				    
+========================= Problema 1 - BINGO =========================
+
+TIMP REALIZARE : 3 ore 30 min
+
+FUNCTII DEFINITE:
+    -> colorare() = coloreaza o casuta cu -1 in matricea secundara
+    -> swap_val() = interschimba valorile celor 2 variabile furnizate
+    -> sort_cresc() = sorteaza crescator o coloana (bubble sort)
+    -> sort_desc() = sorteaza descrescator o coloana (bubble sort)
+    -> swap_col() = interschimba 2 coloane
+    -> shift_col() = permuta circular coloana X cu Y pozitii in jos
+    -> show_card() = afiseaza cardul la intalnirea comenzii aferente
+    -> verificare() = verifica existenta unui castigator (apeleaza urmatoarele functii):
+        - verif_lin() = returneaza scorul in urma verificarii liniilor
+        - verif_col() = returneaza scorul in urma verificarii coloanelor
+        - verif_diag() = returneaza scorul in urma verificarii diagonalelor
+    
+DESCRIERE GENERALA:
+    -> Se definesc variabile locale precum si variabila winner care retine indexul
+    jucatorului castigator si punctajul acestuia. Se initializeaza indexul cu -1 si
+    scorul cu 0.
+
+    -> Se citeste numarul de jucatori, iar apoi cardurile fiecarui jucator. Acestea se
+    copiaza in matricea color unde se coloreaza centrul in pasul initial. Ulterior
+    se citeste numarul de comenzi, urmat de citirea comenzilor sub forma unui sir de
+    caractere care este prelucrat folosind functia strtok.
+
+    -> Pentru fiecare comanda se determina tipul si valoarea sau valorile delimitate de
+    separatorul "-". Apoi in cazul in care nu exista un castigator in urma executiei
+    comenzilor precedente se va executa functia corespunzatoare (cele enuntiate anterior),
+    iar apoi de va verifica daca exista un castigator. In cazul in care exista un casti-
+    gator, se va actualiza variabila winner cu indexul acestuia si scorul aferent.
+
+    -> La finalui citirii comenzilor se verifica valoarea variabilei winner. Daca indexul
+    aceasteia este -1 inseamna ca nu exista castigator. In caz contrar se afiseaza 
+    rezultatul cerut.
+
+========================= Problema 2 - BIBLIOTECA =========================
+
+TIMP REALIZARE : 7 ore 30 min
+
+FUNCTII DEFINITE:
+    -> is_num() = returneaza 1 daca sirul furnizat este un numar
+    -> lowercase() = returneaza cu litere mici sirul de caractere furnizat
+    -> swap_val() = interschimba valorile celor 2 variabile furnizate
+    -> sortare() = sorteaza crescator in vectorul v_id id-urile cartilor gasite
+    -> add_book() = citeste o carte si o pune in vectorul de carti la indexul i
+    -> afisare_carte() = afiseaza o carte din biblioteca
+    -> afisare_biblioteca() = afiseaza toata biblioteca
+    -> search_year() = cauta cartea daca <ELEMENT> este un numar si 
+                       returneaza cate carti gaseste
+    -> search_string() = cauta cartea dupa autor sau titlu daca <ELEMENT> este
+                         sir de caractere si returneaza cate carti gaseste
+    -> afisare_search() = afiseaza cartile din vectorul sortat v_id
+                          rezultat in urma comenzii SEARCH
+    -> replace_word() = inlocuieste un cuvant cu altul in descrierea cartii
+    -> encode() = codifica descrierea unei carti
+
+DESCRIERE GENERALA:
+    -> Se declara structura unei carti, iar apoi se declara variabilele locale si
+    se aloca dinamic biblioteca in functie de numarul de carti citit. Fiecare carte
+    se citeste cu ajutorul functiei add_book(). Se citeste numarul de comenzi, iar
+    apoi se citeste fiecare comanda. Comanda este impartita in REQUEST (SEARCH, ENCODE ...)
+    si ARGUMENT. 
+
+    -> Daca se citeste comanda "SEARCH" se cauta in functie de an sau de autor
+    sau titlu, iar cartile gasite sunt adaugate in vectorul de id-uri, care este sortat,
+    iar apoi sunt afisate in ordinea crescatoare a id-urilor.
+
+    -> Daca se citeste "REPLACE" se va inlocui primul cuvant din argumet cu cel de-al
+    doilea. Se face un sir auxiliar unde se concateneaza cuvintele extrase sau modificate
+    prin strtok. La final este copiat auxiliarul in descriere si memoria este realocata
+    corespunzator lungimii noi.
+
+    -> Daca se citeste "ENCODE" se va codifica descrierea conform cerintei. Se vor face
+    2 auxliare, unul in care codificam (aux) si unul in care punem sirul invers (rez).
+    Parcurgem caracter cu caracter descrierea si numaram aparitiile consecutive ale literei,
+    apoi adaugam litera in auxiliar urmata de numarul de aparitii transformat intr-un sir 
+    reprezentativ pentru valoarea hexa (se foloseste sprintf din stdlib.h), iar in
+    cazul in care caracterul nu este litera il adaugam direct in auxiliar. La final
+    copiem invers auxiliarul in celalalt auxiliar si pe acesta il copiem in descriere.
+    Se va realoca descrierea corespunzator noii lungimi.
+
+    -> Daca se citeste "ADD_BOOK" se va apela functia add_book.
+
+    -> In finalul programului se apeleaza functia de afisare a bibliotecii si
+    se elibereaza memoria alocata dinamic initial.
