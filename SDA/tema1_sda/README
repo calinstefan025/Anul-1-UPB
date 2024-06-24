@@ -1,0 +1,64 @@
+AVRAMONIU Calin-Stefan - 312CC - TEMA 1
+
+===================== PUNCTAJ CALCULATOR PROPRIU =======================
+
+Punctaj teste: 100.0/100 
+Punctaj Valgrind: 20/20
+
+===================== DETALII IMPLEMENTARE TEMA ========================
+
+STRUCTURA TEMA:
+        Tema este structurata pe mai multe fisiere care corespund tipurilor
+    de functii din cerinta (search, query, update), precum si fisierul
+    tema1.c si un alt fisier sursa care contine functiile de implementare
+    pentru coada. De asemenea exista si fisiere header pentru fiecare 
+    fisier sursa si un fisier header unde sunt definite structurile.
+        - tema1.c: contine functia main
+        - search.c / search.h: search, seachLeft, searchRight
+        - query.c / query.h: show, showCurrent, switchq
+        - update.c / update.h: write, moveLeft, moveRight,clearCell, clearAll
+                               insertRight, insertLeft
+        - queue.c / queue.h: pushq, popq
+        - struct.h: structurile folosite in tema
+
+IMPLEMENTARE:
+        - In fisierul tema1.c vom aloca memorie pentru tren si coada,
+    vom initializa trenul si vom deschide fisierele de input si output.
+    Apoi, se va citi numarul de comenzi urmat de comenzile care vor fi
+    adaugate in coada. La intalnirea comenxii EXECUTE se va apela popq
+    si se va executa comanda eliminata din coada folosindu-se functiile
+    din celelalte fisiere sursa. La final se va elibera memoria alocata.
+        - Functia show afiseaza trenul, showCurrent afiseaza valoarea
+    vagonului in care se afla mecanicul, iar switchq inverseaza pointerii
+    din coada, precum si headul si tailul acesteia, rezultand o coada de
+    comenzi care a fost inversata (la urmatorul EXECUTE se va executa
+    comanda care era pe ultima pozitie precedent switchului).
+        - Functiile insertRight si insertLeft adauga un vagon in dreapta,
+    respectiv in stanga mecanicului, alocand memorie pentru acesta. In
+    insertLeft ne vom asigura ca nu se insereaza un vagon intre santinela
+    (locomotiva) si primul vagon in cazul in care mecanicul este in primul
+    vagon. Functia write scrie o valoare data in vagonul mecanicului, iar
+    clearCell elibereaza memoria vagonului in care se afla mecanicul,
+    asigurandu-se ca se va mentine starea initiala a trenului in cazul in
+    care exista doar un vagon. Functia clearAll elibereaza memoria tuturor
+    vagoanelor si aduce trenul in starea initiala, parcurgerea incepand
+    de la vagonul 2, iar pentru primul vagon se va modifica doar valoarea.
+    Se evita astfel o reinitializare a trenului. Functiile moveLeft si
+    moveRight muta mecanicul in stanga, respectiv in dreapta, iar daca me-
+    canicul se afla in ultimul vagon, moveRight va apela insertRight pentru
+    a adauga un nou vagon cu valoarea '#'.
+        - Functiile search, searchLeft si searchRight functioneaza pe acelasi
+    principiu toate trei si difera prin punctul de oprire si pozitia salvata
+    in urma cautarii. Se va parcurge trenul incepand de la mecanic si se va
+    construi un auxiliar cu valorile vagoanelor, iar la fiecare pas se va
+    verifica existenta sirului cautat in auxiliar. Daca se gaseste, se va
+    opri cautarea, iar in functia search ne vom inotarce cu lungimea sirului
+    cautat inapoi pentru a salva pozitia de start a acestuia si vom muta
+    mecanicul acolo. In celalalte functii nu ne vom mai intoarce, deoarece
+    vom salva ultima pozitie si nu mai este necesara intoarcerea. Cazurile
+    de ERROR sunt gestionate in fiecare functie separat.
+        - Functia pushq adauga o comanda in coada, iar popq elimina comanda
+    de la inceputul cozii. Se va aloca memorie pentru comanda si se va copia
+    aceasta in coada. La popq se va elibera memoria alocata pentru comanda
+    eliminata. La fiecare apleare pushq sau popq se va mari sau micsora
+    capacitatea cozii.

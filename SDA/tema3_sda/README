@@ -1,0 +1,45 @@
+==============================================================================
+
+Tema 3 - Avramoniu Calin-Stefan - 312CC
+
+==============================================================================
+
+Punctaj local: 50 / 100
+Bonus valgrid: 8 / 20
+Total: 58 / 120
+
+==============================================================================
+
+STRUCTURA TEMA:
+
+    -> tema3.c = contine functia main si rezolvarea primei cerinte
+    -> cerinta1.c / cerinta1.h = contin functiile si structurile pt cerinta 1
+
+    -> cerinta1.c:
+        - verif_exist - (verifica daca exista id-ul orasului)
+        - adauga_oras - (adauga orasul in lista de adiacenta)
+        - sort - (sorteaza vectorul de rute bune)
+        - afisare - (afiseaza raspunsul in fisier)
+        - max - (intoarce maximul dintre doua floaturi)
+        - calculare_uzura_medie - (calculeaza uzura medie a unei rute)
+
+==============================================================================
+
+DETALII IMPLEMENTARE:
+
+    -> CERINTA 1:
+
+    Pentru cerinta unu vom stoca in structura orasului si segmentele de drum
+    cu uzurile lor pentru fiecare ruta, precum si id-ul rutei care ne va ajuta
+    la afisare. De asemenea stocam si uzura medie a rutei. In implementarea
+    propriu-zisa vom citi pe rand datele din fisier si vom stoca numele ora-
+    selor intr-o matrice de cuvinte pe linia i, unde i va deveni id-ul ora-
+    sului. Apoi, adaugam id-urile si restul informatiilor retinute in struct
+    in lista de adiacenta folosind functia 'adauga_oras'. Dupa ce am adaugat
+    orasul vom itera prin cei K ani si vom actualiza uzurile conform cerintei,
+    dar vom avea mereu grija sa tinem minte uzura veche ncesara calculului u-
+    zurii noi pentru vecin. La final trunchiem uzurile de peste 100 la 100 si
+    calculam uzura medie pentru fiecare ruta. Apoi vom afisa rutele bune folo-
+    sindu-ne de id-ul rutei salvat la inceput si vom afisa si aceste id-uri
+    stocate intr-un vector ce a fost sortat. In final eliberam memoria si
+    inchidem cele 2 fisiere.

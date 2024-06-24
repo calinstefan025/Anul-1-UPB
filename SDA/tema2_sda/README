@@ -1,0 +1,86 @@
+AVRAMONIU Calin-Stefan - 312CC - TEMA 2
+
+===================== PUNCTAJ CALCULATOR PROPRIU =======================
+
+Punctaj teste: 80/100 
+Punctaj Valgrind: 10.0/20
+
+===================== DETALII IMPLEMENTARE TEMA ========================
+
+        Am salvat fisierele date in linia de comanda conform cerintelor,
+    doar in cadrul cerintei doi citindu-se un argument in plus necesar
+    ulterior <K>. Apoi se deschid fisierele si se prelucreaza argumentele
+    urmand un if pentru fiecare cerinta. Se initializeaza nodul de
+    inceput al arborelui si fii acestuia. In cadrul fiecarei cerinte se
+    apeleaza diferite functii necesare pentru rezolvarea cerintei. La
+    finalul programului se inchid fisierele si se elibereaza memoria.
+    
+IMPLEMENTARE FUNCTII:
+
+    -> add_sufix:
+
+            Functia este responsabila pentru adaugarea in arbore a fiecarei
+        litere din sufixul dat ca parametru. Aceasta este recursiva si merge
+        in adancime pentru a adauga valoarea pe pozitia corespunzatoare.
+        Avem conditia de oprire daca nu mai exista litere in sufix, iar a-
+        daugarea valorii se face prin alocarea memoriei unui nod nou in cazul
+        in care prima litera din sufix (cea adaugata) nu exista deja printre
+        fii nodului unde am ajuns recursiv. Daca deja exista valoarea, se va 
+        merge in adancime recursiv pana cand prima litera din sufix nu se va 
+        mai regasi printre fiii unui nod (prima litera este eliminata la
+        fiecare apel recursiv si se trece la urmatoarea).
+    
+    -> construire_arbore:
+
+            Functia este folosita in cadrul fiecarei cerinte, aceasta avand
+        rolul de a construi o matrice de sufixe pentru cuvantul citit din
+        fisier. Apoi aceasta va apela functia add_sufix pentru fiecare linie
+        (fiecare sufix generat), asigurandu-se astfel introducerea tuturor
+        sufixelor in arbore.
+    
+    -> bfs:
+
+            Functia bfs este o functie clasica de bfs pentru afisarea
+        arborelui. Se parcurge acesta in latime, iar in functie de valoarea
+        parametrului 'cerinta' se va afisa ori caracterul nodului ori
+        stringul compactat pentru cerinta 4. Coada necesara implementarii
+        functiei bfs a fost simulata printr-un vector de noduri pentru a
+        simplifica implementarea acesteia.
+
+    -> verif_statistici_dfs:
+
+            Functia are ca scop rezolvarea cerintei 2 si, asa cum sugereaza
+        si numele, parcurge in adancime arborele numarand frunzele semna-
+        lizate prin caracterul '$', numarand descendentii directi ai fie-
+        carui nod si numarand numarul de sufixe de lungime k.
+
+    -> cautare_sufix_dfs:
+
+            Functia este recursiva si are rolul de a cauta un sufix in arbore
+        asa cum se cere in cerinta 3. Astfel se parcurge in adancime arborele
+        si se compara fiecare nod cu prima litera din sufixul cautat, iar
+        daca valorile coincid se va elimina prima litera si se va continua
+        cautarea recursiva. Sufixul este gasit atunci cand nu mai exista
+        litere in cuvantul dat ca parametru, acest lucru insemnand ca exista
+        o suprapunere perfecta a sufixului peste o ramura a arborelui. Functia
+        returneaza 1 daca sufixul a fost gasit si 0 in caz contrar.
+
+    -> completare_string_c4:
+
+            Functia parcurge in adancime arborele si copiaza valoarea din
+        campul 'val' al fiecarui nod in stringul 'c4_val' al fiecarui nod.
+        Aceasta functie are rolul de a pregati arborele pentru cerinta 4
+        unde nodurile se vor compacta iar valorile acestora vor fi puse
+        in 'c4_val'.
+
+    -> c4_merge:
+
+            Functia parcurge in adancime arbrele pana ajunge pe penultimul
+        nivel, iar apoi incepe sa contopeasca cate noduri daca cel de jos
+        este singurul descendent direct al celui de sus. Acest lucru se
+        intampla recursiv, iar apoi se elimina copilul.
+
+    -> freeTree:
+
+            Functia parcurge recursiv arborele in adancime si elibereaza
+        memoria nodurilor.

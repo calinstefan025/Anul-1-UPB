@@ -1,0 +1,154 @@
+==4189== Conditional jump or move depends on uninitialised value(s)
+==4189==    at 0x1098DD: c4_merge (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0E8: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==  Uninitialised value was created by a heap allocation
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x109D22: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== Conditional jump or move depends on uninitialised value(s)
+==4189==    at 0x484EA37: strcat (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x1099A7: c4_merge (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10991E: c4_merge (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0E8: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==  Uninitialised value was created by a heap allocation
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== Conditional jump or move depends on uninitialised value(s)
+==4189==    at 0x484EA57: strcat (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x1099A7: c4_merge (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10991E: c4_merge (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0E8: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==  Uninitialised value was created by a heap allocation
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== Conditional jump or move depends on uninitialised value(s)
+==4189==    at 0x484EA37: strcat (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x1099A7: c4_merge (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10991E: c4_merge (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10991E: c4_merge (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10991E: c4_merge (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0E8: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==  Uninitialised value was created by a heap allocation
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== Conditional jump or move depends on uninitialised value(s)
+==4189==    at 0x484EA57: strcat (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x1099A7: c4_merge (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10991E: c4_merge (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10991E: c4_merge (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10991E: c4_merge (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0E8: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==  Uninitialised value was created by a heap allocation
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== Conditional jump or move depends on uninitialised value(s)
+==4189==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x48E7D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==4189==    by 0x48D16C9: fprintf (fprintf.c:32)
+==4189==    by 0x109665: bfs (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A107: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==  Uninitialised value was created by a heap allocation
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== 320 bytes in 1 blocks are definitely lost in loss record 1 of 9
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1093C4: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1093C4: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== 320 bytes in 1 blocks are definitely lost in loss record 2 of 9
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1093C4: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1093C4: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== 640 bytes in 2 blocks are definitely lost in loss record 3 of 9
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1093C4: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1093C4: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== 640 bytes in 2 blocks are definitely lost in loss record 4 of 9
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1093C4: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== 960 bytes in 3 blocks are definitely lost in loss record 5 of 9
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== 960 bytes in 3 blocks are definitely lost in loss record 6 of 9
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== 1,280 bytes in 4 blocks are definitely lost in loss record 7 of 9
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== 1,280 bytes in 4 blocks are definitely lost in loss record 8 of 9
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1093C4: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
+==4189== 1,920 bytes in 6 blocks are definitely lost in loss record 9 of 9
+==4189==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4189==    by 0x10932A: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10939C: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1093C4: add_sufix (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x1094E4: construire_arbore (in /home/calin/Desktop/tema2_sda/tema2)
+==4189==    by 0x10A0CA: main (in /home/calin/Desktop/tema2_sda/tema2)
+==4189== 
